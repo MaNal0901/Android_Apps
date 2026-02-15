@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Menu">
+
+    <TextView
+        android:id="@+id/textMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="MENU PRINCIPAL"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/btnMain1"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#F44336"
+        android:text="Activité 1"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/btnactivity_5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMenu" />
+
+    <Button
+        android:id="@+id/btnactivity_5"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:backgroundTint="#E91E63"
+        android:text="Activité 5"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnMain1"
+        app:layout_constraintTop_toTopOf="@+id/btnMain1" />
+
+
+    <Button
+        android:id="@+id/btnactivity_7"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#9C27B0"
+        android:text="Activité 7"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/btnactivity_8"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMain1" />
+
+    <Button
+        android:id="@+id/btnactivity_8"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:backgroundTint="#3F51B5"
+        android:text="Activité 8"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnactivity_7"
+        app:layout_constraintTop_toTopOf="@+id/btnactivity_7" />
+
+
+    <Button
+        android:id="@+id/btnactivity_11"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#2196F3"
+        android:text="Activité 11"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/btnactivity_11_2"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnactivity_7" />
+
+    <Button
+        android:id="@+id/btnactivity_11_2"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:backgroundTint="#00BCD4"
+        android:text="Activité des Chiffres"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnactivity_11"
+        app:layout_constraintTop_toTopOf="@+id/btnactivity_11" />
+
+    <Button
+        android:id="@+id/btnactivity_12"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#009688"
+        android:text="Activité des animaux"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnactivity_11" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
