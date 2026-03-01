@@ -84,7 +84,7 @@ public class ListActivity extends AppCompatActivity {
             }
         });
 
-        // Ajouter
+
         btnAjouter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

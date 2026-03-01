@@ -85,7 +85,6 @@ public class GridActivity extends AppCompatActivity {
             }
         });
 
-        // Ajouter
         btnAjouter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -100,7 +99,7 @@ public class GridActivity extends AppCompatActivity {
         });
     }
 
-    // dialogAjouter
+
     private void dialogAjouter() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Ajouter un pays");
@@ -125,7 +124,6 @@ public class GridActivity extends AppCompatActivity {
         builder.show();
     }
 
-    //  dialogModifier
     private void dialogModifier(final int position) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Modifier le pays");

@@ -45,7 +45,6 @@ public class maroc_cities extends AppCompatActivity {
             R.drawable.essaouira
     ));
 
-    // ✅ CORRECTION 4 : GridView supprimé, inutile ici
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,9 +66,7 @@ public class maroc_cities extends AppCompatActivity {
             }
         });
 
-        // ✅ CORRECTION 2 : setOnItemClickListener supprimé
-        // Le clic est géré dans VilleAdapter avec onBindViewHolder
-        // Si vous voulez un Toast au clic, ajoutez-le dans VilleAdapter
+
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());

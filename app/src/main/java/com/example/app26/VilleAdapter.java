@@ -22,14 +22,13 @@ public class VilleAdapter extends RecyclerView.Adapter<VilleAdapter.VilleViewHol
     ArrayList<String> villes;
     ArrayList<Integer> images;
 
-    // ✅ Constructeur
+    // Constructeur
     public VilleAdapter(Context context, ArrayList<String> villes, ArrayList<Integer> images) {
         this.context = context;
         this.villes  = villes;
         this.images  = images;
     }
 
-    // ✅ ViewHolder : représente une seule ligne
     public static class VilleViewHolder extends RecyclerView.ViewHolder {
         ImageView imgVille;
         TextView  txtVille;
@@ -51,8 +50,6 @@ public class VilleAdapter extends RecyclerView.Adapter<VilleAdapter.VilleViewHol
                 .inflate(R.layout.item_ville, parent, false);
         return new VilleViewHolder(view);
     }
-
-    //  Remplit les données dans chaque élément
     @Override
     public void onBindViewHolder(VilleViewHolder holder, int position) {
 
@@ -68,7 +65,7 @@ public class VilleAdapter extends RecyclerView.Adapter<VilleAdapter.VilleViewHol
             }
         });
 
-        // Bouton Supprimer
+
         holder.btnSupprimer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -92,7 +89,6 @@ public class VilleAdapter extends RecyclerView.Adapter<VilleAdapter.VilleViewHol
         });
     }
 
-    // Nombre total d'éléments
     @Override
     public int getItemCount() {
         return villes.size();
@@ -123,7 +119,6 @@ public class VilleAdapter extends RecyclerView.Adapter<VilleAdapter.VilleViewHol
         builder.show();
     }
 
-    //  Méthode publique pour ajouter depuis MainActivity
     public void ajouterVille(String nom, int image) {
         villes.add(nom);
         images.add(image);
