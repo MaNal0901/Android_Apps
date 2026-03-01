@@ -121,4 +121,31 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnactivity_11" />
 
+    <Button
+        android:id="@+id/btnactivity_list_grid_spinner"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Activité des Li_gri_spinners"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toEndOf="@+id/btnactivity_12"
+        app:layout_constraintTop_toBottomOf="@+id/btnactivity_11_2" />
+
+    <Button
+        android:id="@+id/btnactivity_maroc_cities"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#8BC34A"
+        android:text="Activité des villes du Maroc"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnactivity_12" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,7 +12,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class Menu extends AppCompatActivity {
-    Button  btnActivite1,btnActivite5,btnActivite7,btnActivite8,btnActivite11,btnActivite11Chifrres , btnActivite_Animaux;
+    Button  btnActivite1,btnActivite5,btnActivite7,btnActivite8,btnActivite11,btnActivite11Chifrres , btnActivite_Animaux , btnActivite_List_Grid_Spinner,
+            btnActivite_cities;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +26,8 @@ public class Menu extends AppCompatActivity {
         btnActivite11=findViewById(R.id.btnactivity_11);
         btnActivite11Chifrres=findViewById(R.id.btnactivity_11_2);
         btnActivite_Animaux=findViewById(R.id.btnactivity_12);
+        btnActivite_List_Grid_Spinner=findViewById(R.id.btnactivity_list_grid_spinner);
+        btnActivite_cities=findViewById(R.id.btnactivity_maroc_cities);
         btnActivite1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -74,6 +77,21 @@ public class Menu extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        btnActivite_List_Grid_Spinner.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Menu.this, ListGridSpinner.class);
+                startActivity(intent);
+            }
+        });
+        btnActivite_cities.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Menu.this, maroc_cities.class);
+                startActivity(intent);
+            }
+        });
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);

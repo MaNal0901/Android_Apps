@@ -12,6 +12,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.App26">
         <activity
+            android:name=".maroc_cities"
+            android:exported="false" />
+        <activity
+            android:name=".SpinnerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GridActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListGridSpinner"
+            android:exported="false" />
+        <activity
+            android:name=".ListGrid"
+            android:exported="false" />
+        <activity
+            android:name=".cardviewexple"
+            android:exported="false" />
+        <activity
+            android:name=".Meteo"
+            android:exported="false" />
+        <activity
             android:name=".animauxVideo"
             android:exported="false" />
         <activity
